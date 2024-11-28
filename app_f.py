@@ -8,18 +8,18 @@ import json
 
 # Cargar la base de datos
 # Asegúrate de reemplazar 'ruta_a_tu_base.csv' con la ruta real a tu archivo
-df = pd.read_csv('/Users/danielrodriguez/Desktop/PROGRA/Investigacion_CD/sa_shiny.csv')
+df = pd.read_csv('shiny-final/bases_shiny/sa_shiny.csv')
 
-est_osig = pd.read_csv('/Users/danielrodriguez/Desktop/PROGRA/Investigacion_CD/bases_shiny/t_osig_ent_p1.csv')
+est_osig = pd.read_csv('shiny-final/bases_shiny/t_osig_ent_p1.csv')
 
-p1 = pd.read_csv('/Users/danielrodriguez/Desktop/PROGRA/Investigacion_CD/bases_shiny/i_osig_gen.csv')
+p1 = pd.read_csv('shiny-final/bases_shiny/i_osig_gen.csv')
 
 entidades_mexico = est_osig['Estado'].unique()
 subgrupos = est_osig['OSIG'].unique()
 
 nacional = est_osig[est_osig['Estado']=='Nacional']
 
-with open('/Users/danielrodriguez/Desktop/PROGRA/Investigacion_CD/mexicoHigh.json', 'r') as geojson_file:
+with open('shiny-final/bases_shiny/mexicoHigh.json', 'r') as geojson_file:
     mexico_geojson = json.load(geojson_file)
 
 # Calcular las métricas necesarias
