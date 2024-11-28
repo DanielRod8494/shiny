@@ -8,11 +8,11 @@ import json
 
 # Cargar la base de datos
 # Asegúrate de reemplazar 'ruta_a_tu_base.csv' con la ruta real a tu archivo
-df = pd.read_csv('shiny-final/bases_shiny/sa_shiny.csv')
+df = pd.read_csv('bases_shiny/sa_shiny.csv')
 
-est_osig = pd.read_csv('shiny-final/bases_shiny/t_osig_ent_p1.csv')
+est_osig = pd.read_csv('bases_shiny/t_osig_ent_p1.csv')
 
-p1 = pd.read_csv('shiny-final/bases_shiny/i_osig_gen.csv')
+p1 = pd.read_csv('bases_shiny/i_osig_gen.csv')
 
 entidades_mexico = est_osig['Estado'].unique()
 subgrupos = est_osig['OSIG'].unique()
