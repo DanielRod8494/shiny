@@ -19,7 +19,7 @@ subgrupos = est_osig['OSIG'].unique()
 
 nacional = est_osig[est_osig['Estado']=='Nacional']
 
-with open('shiny-final/bases_shiny/mexicoHigh.json', 'r') as geojson_file:
+with open('bases_shiny/mexicoHigh.json', 'r') as geojson_file:
     mexico_geojson = json.load(geojson_file)
 
 # Calcular las métricas necesarias
