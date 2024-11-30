@@ -68,6 +68,94 @@ app.layout = dbc.Container([
     ]),
     html.Br(),
     dbc.Tabs([
+        # Pestaña de Contexto
+        dbc.Tab(label="Contexto", children=[
+            html.Br(),
+            dbc.Row([
+                dbc.Col([
+                    html.H4("Contexto"),
+                    html.P("""
+                    La comunidad LGBTQ+, a pesar de ser un grupo con gran diversidad en cuanto a identidades y orientaciones que ha crecido constantemente a lo largo de los años, enfrenta un alto grado de discriminación y marginalización en distintos contextos en México.
+
+                    Aunque reconocemos que es un problema multifacético, sabemos que uno de los factores que lo ocasionan es la falta de visibilidad y reconocimiento de las contribuciones al país, dentro de estas, las que hacen al desarrollo socioeconómico.
+
+                    Esta misma invisibilidad a los aportes representa un obstáculo en la creación de políticas públicas efectivas en cuanto a la manera en la que abordan las necesidades específicas y problemáticas que existen en la comunidad dentro del contexto mexicano, y de esta manera, perpetuando su marginalización
+
+                    Por ello, consideramos importante responder a la siguiente pregunta: 
+
+                    """),
+                    html.P("""
+                    <b>¿Cuánto aportan los miembros de la comunidad LGBTQ+ en impuestos al consumo y al ingreso al presupuesto federal de México?
+                    <b>"""),
+                    
+                    html.P("""
+                    ¿Por qué nuestros resultados serían relevantes?
+
+                    Al tener conocimiento de la aportación de la comunidad a las arcas federales, es posible exigir mayor representación política. Actualmente, en el Congreso de la nación apenas existen 4 curules ocupados por personas que se autoidentifican dentro de la comunidad LGBTQ+. 
+
+                    Por esa misma razón, en el presupuesto de egresos de la nación para 2024 no se han identificado programas que atiendan las necesidades específicas de la comunidad, lo que se ha traducido en que el 57% de las juventudes LGBTQ+ consideró suicidarse el año pasado; Igualmente, el año pasado, 1 de cada 3 juventudes decidieron materializarlo en un intento de suicidio (The Trevor Project, 2024). 
+
+                    Finalmente, la respuesta a esta investigación permitirá desafiar estereotipos y romper estigmas.
+  
+                    """),
+                ], width=12),
+            ]),
+        ]),
+        
+        # Pestaña de Ayuda
+        dbc.Tab(label="Ayuda", children=[
+            html.Br(),
+            dbc.Row([
+                dbc.Col([
+                    html.H4("Sección de Ayuda"),
+                    html.P("""
+                    Esta aplicación interactiva está diseñada para facilitar la visualización de los resultados obtenidos de la investigación sobre las aportaciones tributarias de diferentes comunidades a los erarios públicos. 
+                    A través de su interfaz amigable, permite explorar datos específicos por ubicación geográfica, tipo de impuesto y comunidad.
+                    """),
+                    html.Ul([
+                        html.Li("Visualizar datos desglosados: Explora cuánto contribuye cada comunidad y sus miembros en impuestos como el ISR, el IVA o el total combinado."),
+                        html.Li("Seleccionar subgrupos: Filtra la información según diferentes comunidades (normativos, LGBTQ+, lesbianas, gays, bisexuales, otro, T+)."),
+                        html.Li("Examinar resultados por ubicación: Observa la aportación por entidad federativa y a nivel nacional."),
+                        html.Li("Personalizar vistas: Cambia parámetros como el tipo de impuesto o la comunidad para adaptar los gráficos a tus intereses."),
+                        html.Li("Acceso intuitivo: Interactúa fácilmente con gráficos, tablas y mapas para analizar la información."),
+                    ]),
+                    
+                    html.P("""
+                    <b> Origen de los datos <b>
+                    """),
+                    html.Ul([
+                        html.Li("Los resultados se basan en la Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) 2022, la cual brinda un panorama detallado sobre los ingresos, consumos y gastos de las familias mexicanas."),
+                        html.Li("Las cifras de aportaciones son mensuales, expresadas en pesos mexicanos."),
+                        html.Li("El cálculo del Impuesto Sobre la Renta (ISR) está limitado a personas físicas y fue estimado de acuerdo con las reglas fiscales aplicables en 2022.")
+                    ]),
+                ], width=12),
+            ]),
+        ]),
+        
+        # Pestaña de Autores
+        dbc.Tab(label="Autores", children=[
+            html.Br(),
+            dbc.Row([
+                dbc.Col([
+                    html.H4("Autores"),
+                    html.P("""
+                    Esta aplicación fue creada por un grupo de 4 personas que estudian en séptimo semestre de economía en el Tec de Monterrey y tienen la intención de conocer estas interrogantes que deben ser respondidas para tener un impacto significativo en las minorías mexicanas. 
+                    Somos:
+
+                    """),
+                    html.Ul([
+                        html.Li("Rafael Arturo Castilla Reyes"),
+                        html.Li("Daniel Rodríguez Jimbo"),
+                        html.Li("Humberto Montemayor Pérez"),
+                        html.Li("Alejandro Palma Rodríguez")
+                    ]),
+                    html.P("""
+                    El equipo agradece la contribución de diversas fuentes y recursos que facilitaron la realización de esta aplicación.
+                    """),
+                ], width=12),
+            ]),
+        ]),
+        
         # Pestaña 1: Gráfica de barras
         dbc.Tab(label='Aportación per cápita', children=[
             html.Br(),
